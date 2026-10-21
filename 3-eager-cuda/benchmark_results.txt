@@ -1,0 +1,35 @@
+MatMul Benchmark - 20 runs each
+Torch device: cuda
+========================================================================
+
+tiny   [2x3] @ [3x4]
+  cuda           :      0.2523 ms  ± 0.2955 ms
+  torch(cuda):      0.1015 ms  ± 0.0126 ms
+  [cuda vs torch: 2.49x slower]
+
+small  [32x64] @ [64x128]
+  cuda           :      0.3104 ms  ± 0.7836 ms
+  torch(cuda):      0.0441 ms  ± 0.0113 ms
+  [cuda vs torch: 7.03x slower]
+
+medium [128x256] @ [256x512]
+  cuda           :      0.4166 ms  ± 0.3554 ms
+  torch(cuda):      0.1334 ms  ± 0.0225 ms
+  [cuda vs torch: 3.12x slower]
+
+large  [512x1024] @ [1024x512]
+  cuda           :      1.3000 ms  ± 0.1789 ms
+  torch(cuda):      0.0939 ms  ± 0.0808 ms
+  [cuda vs torch: 13.84x slower]
+
+square [1000x1000] @ [1000x1000]
+  cuda           :      1.9128 ms  ± 0.2634 ms
+  torch(cuda):      0.1866 ms  ± 0.1038 ms
+  [cuda vs torch: 10.25x slower]
+
+giant  [10000x10000] @ [10000x10000]
+  cuda           :    134.3140 ms  ± 15.0089 ms
+  torch(cuda):     94.8518 ms  ± 0.6830 ms
+  [cuda vs torch: 1.42x slower]
+
+========================================================================

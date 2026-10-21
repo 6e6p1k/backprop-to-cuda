@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data files (large)
+data/raw/*
+data/processed/*
+
+# Keep folders but not contents
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# OS junk
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Virtual environments
+venv/
+.env/
+
+# so
+*.so
+*.pyd
+*.bz2
+*.dll

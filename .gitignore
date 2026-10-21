@@ -1,0 +1,11 @@
+build/
+*.so
+*.dll
+*.obj
+*.o
+*.bz2
+compile_commands.json
+.DS_Store
+xcuserdata/
+.vscode/
+.claude/
