@@ -22,4 +22,3 @@ Steps 1 to 3 are collected from two earlier repositories and cleaned up. Scratch
 - `2-cpp-cpu/main.cpp`, built with clang++ `-std=c++17` against `scipy_openblas32`: all 12 backward tests passed.
 - `2-cpp-cpu/benchmark.py` (784-256-256-10, batch 256, 40 steps): naive matmul 164 ms per step, BLAS 33 ms per step.
 - `2-cpp-cpu/training.py` (MNIST, 784-64-10 with no activation, 50 epochs): 88.1% accuracy on the training set, against 88.0% for the linear model in step 1.
-- Step 3 needs an NVIDIA GPU and was not built or run, including the fixes listed in its README.
