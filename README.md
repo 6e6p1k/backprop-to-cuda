@@ -9,8 +9,6 @@ From learning how backpropagation works to [Bobrito](https://github.com/6e6p1k/b
 | 3 | [`3-eager-cuda`](3-eager-cuda) | 24 to 29 Mar 2026 | Eager tensors on the GPU, using CUDA kernels, cuBLAS and cuTENSOR |
 | 4 | [`4-bobrito`](4-bobrito) | from Apr 2026 | A lazy static-graph framework, in its own repository |
 
-Steps 1 to 3 are collected from two earlier repositories and cleaned up. Scratch files, build output and commented-out code were removed. Bugs found while collecting them were fixed. Each step's README says what that step could not do, which is where the next step starts.
-
 ## What was run (21 Oct 2026, macOS arm64)
 
 - `1-numpy-autograd/test.py` (Python 3.12, NumPy 2.5.4, torch 2.14.1): over four runs, each on one random input, the largest gradient difference from PyTorch was 1.1e-8 to 2.9e-7 across `w1`, `b1`, `w2` and `b2`.
